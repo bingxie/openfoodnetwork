@@ -128,4 +128,7 @@ group :development do
   gem 'guard-zeus'
   gem 'guard-rspec'
   gem 'parallel_tests'
+  gem "better_errors"
+  gem 'quiet_assets'
+  gem 'activerecord-colored_log_subscriber'
 end
