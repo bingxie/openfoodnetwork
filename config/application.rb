@@ -55,6 +55,7 @@ module Openfoodnetwork
     config.autoload_paths += %W(
       #{config.root}/app/presenters
       #{config.root}/app/jobs
+      #{config.root}/lib
     )
 
     # Only load the plugins named here, in the order given (default is alphabetical).

@@ -1,6 +1,8 @@
 require 'open_food_network/tag_rule_applicator'
 
 class BaseController < ApplicationController
+  prepend Spree::Core::ControllerHelpers::OrderDecorator
+
   include Spree::Core::ControllerHelpers
   include Spree::Core::ControllerHelpers::RespondWith
   include EnterprisesHelper

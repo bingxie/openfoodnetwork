@@ -1,4 +1,6 @@
 Spree::UserSessionsController.class_eval do
+  prepend Spree::Core::ControllerHelpers::OrderDecorator
+
   before_filter :set_checkout_redirect, only: :create
 
   def create

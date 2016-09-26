@@ -1,6 +1,7 @@
 require 'open_food_network/last_used_address'
 
 Spree::CheckoutController.class_eval do
+  prepend Spree::Core::ControllerHelpers::OrderDecorator
 
   include CheckoutHelper
 
